@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TrailBridge | Find Your Next Adventure</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="index">
+<div id="nav"></div>
+<header class="hero">
+  <div class="hero-content"><div class="eyebrow">Your next story starts outside</div><h1>Find your trail.<br>Meet your people.</h1><p>Discover mountain escapes, local guides, and memorable journeys. TrailBridge brings travelers and adventure organizers together in one place.</p><div class="hero-actions"><a class="pill" href="packages.html">Explore adventures ↗</a><a class="pill light" href="guides.html">Meet the guides</a></div></div>
+</header>
+<div class="searchbar">
+  <div><label for="where">WHERE TO?</label><input id="where" placeholder="Try Kinnaur, Sangla, Chitkul"></div>
+  <div><label for="kind">ADVENTURE TYPE</label><select id="kind"><option value="all">All adventures</option><option>Trekking</option><option>Camping</option><option>Road trip</option></select></div>
+  <div><label for="when">WHEN?</label><input id="when" type="date"></div>
+  <div><label for="level">TREKKER LEVEL</label><select id="level"><option value="all">All levels</option><option value="Beginner">Beginner-friendly</option><option value="Experienced">Experienced</option></select></div>
+  <button class="pill" onclick="goSearch()">Search trips</button>
+</div>
+<section id="trips"><div class="section-head"><div><div class="kicker">Fresh from our organizers</div><h2>Latest packages</h2></div><p>Every package lists the stay, meals, itinerary and inclusions up front. New listings carry a NEW badge for 14 days.</p></div><div class="cards" id="tripCards"></div><p style="text-align:center;margin-top:28px"><a class="pill" href="packages.html">View all packages ↗</a></p></section>
+<section class="guide-section" id="guides">
+  <div class="section-head"><div><div class="kicker">Good vibes. Responsible trails.</div><h2>Meet your trek guide</h2></div><p>Every great trek needs someone who can keep the energy high and the group coordinated.</p></div>
+  <div class="guide-card">
+    <div class="guide-photo"><img src="gaurav-bisht.jpg" alt="Guide profile photo for Gaurav Bisht"></div>
+    <div class="guide-info"><div class="kicker">All guides · Featured profile</div><h3 class="guide-name">Gaurav Bisht</h3><div class="guide-sub">The Crazy Adventure Guide 😎 · TrailBridge community profile</div>
+      <div class="attribute-list">
+        <div class="attribute"><div class="emoji">😂</div><div><strong>Crazy Sense of Humor</strong><p>Brings big jokes, spontaneous fun, and unforgettable moments to the group.</p></div></div>
+        <div class="attribute"><div class="emoji">🎭</div><div><strong>Turns Situations into Fun</strong><p>Keeps the mood positive and helps the group handle unexpected moments calmly and cheerfully.</p></div></div>
+        <div class="attribute"><div class="emoji">😄</div><div><strong>Non-Stop Laughter</strong><p>The companion who helps turn ordinary mountain moments into stories everyone remembers.</p></div></div>
+        <div class="attribute"><div class="emoji">🧭</div><div><strong>Group Coordination & Trail Awareness</strong><p>Values clear communication, staying together, checking conditions, and following responsible trekking practices.</p></div></div>
+      </div>
+      <p class="notice">Professional credentials and certifications have not been verified; this profile describes the intended guide personality and role.</p>
+    </div>
+  </div>
+</section>
+
+
+<section id="how">
+  <div class="section-head"><div><div class="kicker">Adventure made simpler</div><h2>How TrailBridge works</h2></div><p>A simple way to discover trips and connect with organizers.</p></div>
+  <div class="how-grid"><div class="how"><div class="num">STEP 01</div><h3>Discover</h3><p>Browse trips by destination and adventure type to find the experience that suits you.</p></div><div class="how"><div class="num">STEP 02</div><h3>Get the details</h3><p>Review highlights, sample itinerary, photo inspiration, and guide information before deciding.</p></div><div class="how"><div class="num">STEP 03</div><h3>Connect</h3><p>Contact the organizer to confirm dates, availability, inclusions, safety arrangements, and price.</p></div></div>
+</section>
+<div id="foot"></div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
